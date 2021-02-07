@@ -41,15 +41,26 @@ public class Stack {
             System.out.println(nums[top]);
         }
     }
-    
-    public void display()
-    {
+
+    public void display() {
         System.out.print("[ ");
-        for(int i = top ; i >= 0 ; i--)
+        for (int i = top; i >= 0; i--) {
             System.out.print(nums[i] + " ");
-        
+        }
+
         System.out.print("]");
         System.out.println();
+    }
+
+    public static void main(String[] args) {
+        Stack lol = new Stack();
+
+        lol.push(10);
+        lol.push(20);
+        lol.push(30);
+        lol.push(40);
+
+        lol.display();
     }
 
 }
